@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zakariae El Harrak Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800;900&amp;family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Knewave&amp;family=La+Belle+Aurore&amp;display=swap" rel="stylesheet">
+<style>
+html{background:#FFF4ED;min-height:100%}
+body{margin:0;min-height:100vh;min-height:100dvh;background:#FFF4ED}
+a{color:#14100C;text-decoration:none}
+.obj{display:block;transition:transform .25s ease}
+.obj:hover{transform:translateY(-8px)}
+@keyframes nudge{0%,100%{transform:translate(0,0)}50%{transform:translate(8px,8px)}}
+.stage{background:#FFF4ED;overflow-x:hidden;min-height:100vh;min-height:100dvh}.scene{margin:0 auto}
+@media (max-width:1439px) and (min-width:1200px){.scene{zoom:.85}}
+@media (max-width:1199px) and (min-width:1000px){.scene{zoom:.7}}
+@media (max-width:999px) and (min-width:821px){.scene{zoom:.58}}
+.mt{position:absolute;opacity:0;pointer-events:none}
+.burger{display:none;width:44px;height:44px;box-sizing:border-box;flex-direction:column;justify-content:center;align-items:center;gap:6px;cursor:pointer;border:2px solid #000000;background:#FFFFFF}
+.burger span{display:block;width:22px;height:2px;background:#000000;transition:transform .2s ease,opacity .2s ease}
+.mt:focus-visible + .burger{outline:2px solid #000000;outline-offset:4px}
+.mt:checked + .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.mt:checked + .burger span:nth-child(2){opacity:0}
+.mt:checked + .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media (max-width:820px){.burger{display:flex}.mainnav{display:none!important;flex:1 1 100%!important;flex-direction:column!important;gap:0!important;font-size:20px!important;line-height:28px!important;border-top:2px solid #000000;padding-top:8px}.mainnav a{display:flex;align-items:center;min-height:48px;border-bottom:1px solid #D9D9D9}.mt:checked ~ .mainnav{display:flex!important}}
+.mob{display:none}
+@media (max-width:820px){.scene{display:none}.mob{display:block}}
+.card{display:flex;flex-direction:column;justify-content:flex-end;gap:4px;min-height:150px;padding:16px;box-sizing:border-box;transition:transform .2s ease}.card:hover{transform:translateY(-4px)}.card:focus-visible{outline:2px solid #000000;outline-offset:4px}
+</style>
+</head>
+<body>
+<div class="stage">
+<div class="scene" style="position: relative; width: 1440px; height: 900px; overflow: hidden; background: #FFF4ED; font-family: 'Archivo', sans-serif; color: #14100C">
+
+<!-- name -->
+<div style="position: absolute; left: 60px; top: 44px; display: flex; flex-direction: column; gap: 4px">
+
+
+</div>
+
+<!-- statement -->
+<div style="position: absolute; left: 60px; top: 150px; width: 560px; display: flex; flex-direction: column; gap: 16px">
+<h1 style="margin: 0; font-family: 'Knewave', cursive; font-weight: 400; font-size: 32px; line-height: 1.3; color: #000000">Everything here tells a piece of my story</h1>
+<p style="margin: 0; font-family: 'La Belle Aurore', cursive; font-size: 32px; line-height: 44px; color: #A6470E">click any object to explore my world</p>
+</div>
+
+<!-- books: About -->
+<div style="position: absolute; left: 100px; top: 520px; width: 320px; height: 220px">
+<a class="obj" id="cases" href="about.html" style="position: absolute; left: 0; top: 156px; width: 300px; height: 64px; background: #1F4D3A; border-radius: 4px">
+<div style="position: absolute; left: 22px; top: 0; width: 2px; height: 64px; background: rgba(237,230,214,0.5)"></div>
+<div style="position: absolute; right: 22px; top: 0; width: 2px; height: 64px; background: rgba(237,230,214,0.5)"></div>
+<div style="position: absolute; left: 0; right: 0; top: 0; line-height: 64px; text-align: center; font-size: 19px; font-weight: 800; letter-spacing: 0.16em; color: #EDE6D6">EL HARRAK</div>
+</a>
+<a class="obj" id="about" href="about.html" style="position: absolute; left: 16px; top: 100px; width: 270px; height: 56px; background: #E4772A; border-radius: 4px">
+<div style="position: absolute; left: 20px; top: 0; width: 2px; height: 56px; background: rgba(20,16,12,0.45)"></div>
+<div style="position: absolute; right: 20px; top: 0; width: 2px; height: 56px; background: rgba(20,16,12,0.45)"></div>
+<div style="position: absolute; left: 0; right: 0; top: 0; line-height: 56px; text-align: center; font-size: 24px; font-weight: 900; letter-spacing: 0.22em; color: #14100C">ZAKARIAE</div>
+</a>
+<a class="obj" id="process" href="about.html" style="position: absolute; left: 8px; top: 52px; width: 250px; height: 48px; background: #9DB7D5; border-radius: 4px; transform: rotate(-1.5deg); transform-origin: left bottom">
+<div style="position: absolute; left: 18px; top: 0; width: 2px; height: 48px; background: rgba(20,16,12,0.4)"></div>
+<div style="position: absolute; right: 18px; top: 0; width: 2px; height: 48px; background: rgba(20,16,12,0.4)"></div>
+<div style="position: absolute; left: 0; right: 0; top: 0; line-height: 48px; text-align: center; font-size: 18px; font-weight: 800; letter-spacing: 0.2em; color: #14100C">ABOUT</div>
+</a>
+
+</div>
+
+<!-- sport bike on the books -->
+<div aria-hidden="true" style="position: absolute; left: 120px; top: 456px; width: 280px; height: 116px; pointer-events: none">
+
+<svg width="240" height="130" viewBox="0 0 240 130" aria-hidden="true" style="position: absolute; left: 8px; top: -5px; pointer-events: none">
+<ellipse cx="120" cy="122" rx="104" ry="3" fill="rgba(0,0,0,0.18)"></ellipse>
+<circle cx="52" cy="92" r="25" fill="none" stroke="#14191F" stroke-width="10"></circle>
+<circle cx="52" cy="92" r="17" fill="none" stroke="#E4772A" stroke-width="3"></circle>
+<path d="M52 75 L52 109 M37 83 L67 101 M37 101 L67 83" stroke="#C9CFD6" stroke-width="2"></path>
+<circle cx="52" cy="92" r="5" fill="#2B323B"></circle>
+<circle cx="190" cy="92" r="25" fill="none" stroke="#14191F" stroke-width="10"></circle>
+<circle cx="190" cy="92" r="17" fill="none" stroke="#E4772A" stroke-width="3"></circle>
+<path d="M190 75 L190 109 M175 83 L205 101 M175 101 L205 83" stroke="#C9CFD6" stroke-width="2"></path>
+<circle cx="190" cy="92" r="5" fill="#2B323B"></circle>
+<path d="M52 92 L98 88" stroke="#8E959E" stroke-width="7" stroke-linecap="round"></path>
+<rect x="92" y="76" width="50" height="32" rx="6" fill="#2B323B"></rect>
+<rect x="66" y="100" width="64" height="10" rx="5" fill="#C9CFD6"></rect>
+<path d="M16 68 L42 60 L84 58 L92 66 L84 76 L36 80 Z" fill="#2447B5"></path>
+<path d="M40 60 L86 56 L92 62 L44 66 Z" fill="#14191F"></path>
+<path d="M84 58 Q102 38 132 44 L138 60 L94 68 Z" fill="#2447B5"></path>
+<path d="M120 46 L152 52 L172 68 L182 84 L152 96 L122 90 L104 76 Z" fill="#2447B5"></path>
+<path d="M118 62 L164 70" stroke="#F3EFD8" stroke-width="4" stroke-linecap="round"></path>
+<path d="M164 66 L180 78 L172 80 Z" fill="#F3EFD8"></path>
+<path d="M128 46 L146 28 L153 32 L144 50 Z" fill="#9DB7D5" opacity="0.9"></path>
+<path d="M162 62 L190 92" stroke="#C9CFD6" stroke-width="5" stroke-linecap="round"></path>
+<path d="M168 68 Q190 54 210 70" fill="none" stroke="#2447B5" stroke-width="6" stroke-linecap="round"></path>
+<path d="M140 44 L132 36" stroke="#14191F" stroke-width="4" stroke-linecap="round"></path>
+</svg></div>
+
+<!-- project archive box: UI/UX design case studies -->
+<a class="obj" id="uiux" href="projects.html" style="position: absolute; left: 470px; top: 430px; width: 400px; height: 310px">
+
+<div style="position: absolute; left: 36px; top: 20px; z-index: 1; width: 328px; height: 180px; padding: 0; border: none; border-radius: 8px 8px 0 0; background: #E4772A; text-align: left">
+<div style="position: absolute; left: 12px; top: -24px; width: 84px; height: 24px; background: #E4772A; border-radius: 8px 8px 0 0; line-height: 24px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; color: #14100C">01</div>
+<div style="position: absolute; left: 18px; top: 10px; font-size: 52px; font-weight: 900; line-height: 1; color: #14100C; opacity: 1">01</div>
+<div style="position: absolute; right: 16px; top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.08em; color: #14100C; opacity: 1">[COVER IMAGE]</div>
+</div>
+
+<div style="position: absolute; left: 36px; top: 84px; z-index: 2; width: 328px; height: 180px; padding: 0; border: none; border-radius: 8px 8px 0 0; background: #9DB7D5; text-align: left">
+<div style="position: absolute; left: 108px; top: -24px; width: 84px; height: 24px; background: #9DB7D5; border-radius: 8px 8px 0 0; line-height: 24px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; color: #14100C">02</div>
+<div style="position: absolute; left: 18px; top: 10px; font-size: 52px; font-weight: 900; line-height: 1; color: #14100C; opacity: 0">02</div>
+<div style="position: absolute; right: 16px; top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.08em; color: #14100C; opacity: 0">[COVER IMAGE]</div>
+</div>
+
+<div style="position: absolute; left: 36px; top: 84px; z-index: 2; width: 328px; height: 180px; padding: 0; border: none; border-radius: 8px 8px 0 0; background: #3FA37A; text-align: left">
+<div style="position: absolute; left: 204px; top: -24px; width: 84px; height: 24px; background: #3FA37A; border-radius: 8px 8px 0 0; line-height: 24px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; color: #14100C">03</div>
+<div style="position: absolute; left: 18px; top: 10px; font-size: 52px; font-weight: 900; line-height: 1; color: #14100C; opacity: 0">03</div>
+<div style="position: absolute; right: 16px; top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.08em; color: #14100C; opacity: 0">[COVER IMAGE]</div>
+</div>
+
+<div style="position: absolute; left: 4px; top: 166px; z-index: 3; width: 392px; height: 144px; background: #3F4B5C">
+<div style="position: absolute; left: 0; top: 0; width: 16px; height: 16px; border-top: 4px solid #C9CFD6; border-left: 4px solid #C9CFD6"></div>
+<div style="position: absolute; right: 0; top: 0; width: 16px; height: 16px; border-top: 4px solid #C9CFD6; border-right: 4px solid #C9CFD6"></div>
+<div style="position: absolute; left: 0; bottom: 0; width: 16px; height: 16px; border-bottom: 4px solid #C9CFD6; border-left: 4px solid #C9CFD6"></div>
+<div style="position: absolute; right: 0; bottom: 0; width: 16px; height: 16px; border-bottom: 4px solid #C9CFD6; border-right: 4px solid #C9CFD6"></div>
+<div style="position: absolute; left: 150px; top: 12px; width: 92px; height: 18px; background: #12171C; border-radius: 9px"></div>
+<div style="position: absolute; left: 22px; top: 42px; width: 348px; height: 86px; background: #EDE6D6; border-radius: 4px">
+
+<div style="position: absolute; left: 0px; top: 24px; font-size: 32px; font-weight: 900; line-height: 1.1; color: #14100C; width: 316px; right: 0px; margin-left: auto; margin-right: auto; text-align: center">[PROJECTS LIST]</div>
+
+
+</div>
+</div>
+<div style="position: absolute; left: -8px; top: 128px; z-index: 4; width: 416px; height: 38px; background: #2B323B; border-radius: 6px; line-height: 38px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.22em; color: #EDE6D6">Selected Projects</div>
+</a>
+
+<!-- poster: experience -->
+<a class="obj" id="systems" href="experience.html" style="position: absolute; left: 920px; top: 400px; width: 240px; height: 340px">
+
+<div style="position: absolute; left: 0; top: 0; width: 224px; height: 324px; border: 8px solid #1B1F24; background-color: #0F2A44; background-image: linear-gradient(rgba(157,183,213,0.16) 1px, transparent 1px), linear-gradient(90deg, rgba(157,183,213,0.16) 1px, transparent 1px); background-size: 20px 20px"></div>
+<div style="position: absolute; right: 26px; top: 26px; text-align: right; font-size: 28px; font-weight: 900; line-height: 0.95; color: #EDE6D6">
+<div>Work</div>
+<div>Experience</div>
+</div>
+<div style="position: absolute; left: 30px; top: 168px; display: flex; gap: 10px">
+<div style="width: 36px; height: 36px; background: #E4772A"></div>
+<div style="width: 36px; height: 36px; background: #9DB7D5"></div>
+<div style="width: 36px; height: 36px; background: #2F7D58"></div>
+<div style="width: 36px; height: 36px; background: #EDE6D6"></div>
+</div>
+<div style="position: absolute; left: 30px; top: 226px; width: 96px; height: 34px; background: #E4772A; border-radius: 17px"></div>
+<div style="position: absolute; left: 138px; top: 224px; width: 34px; height: 34px; border: 2px solid #9DB7D5; border-radius: 50%"></div>
+<div style="position: absolute; left: 184px; top: 230px; width: 30px; height: 22px; border: 2px solid #EDE6D6; border-radius: 12px">
+<div style="position: absolute; right: 2px; top: 2px; width: 14px; height: 14px; background: #EDE6D6; border-radius: 50%"></div>
+</div>
+<div style="position: absolute; left: 30px; top: 276px; width: 180px; height: 26px; border: 1.5px dashed #9DB7D5; border-radius: 6px"></div>
+</a>
+
+<!-- service bell: contact -->
+<a class="obj" id="contact" href="contact.html" style="position: absolute; left: 1200px; top: 600px; width: 190px; height: 140px">
+
+<div style="position: absolute; left: 10px; top: 124px; width: 170px; height: 16px; background: #2B323B; border-radius: 8px"></div>
+<div style="position: absolute; left: 30px; top: 114px; width: 130px; height: 12px; background: #3A424D; border-radius: 6px"></div>
+<div style="position: absolute; left: 40px; top: 34px; width: 110px; height: 80px; background: #E4772A; border-radius: 55px 55px 0 0"></div>
+<div style="position: absolute; left: 58px; top: 50px; width: 12px; height: 30px; background: rgba(255,255,255,0.28); border-radius: 6px; transform: rotate(18deg)"></div>
+<div style="position: absolute; left: 85px; top: 20px; width: 20px; height: 16px; background: #2B323B; border-radius: 4px"></div>
+<div style="position: absolute; left: 78px; top: 8px; width: 34px; height: 14px; background: #3A424D; border-radius: 7px"></div>
+<div style="position: absolute; left: 40px; top: 86px; width: 110px; height: 28px; background: #EDE6D6; line-height: 28px; text-align: center; font-size: 14px; font-weight: 900; letter-spacing: 0.14em; color: #14100C">CONTACT</div>
+</a>
+
+<!-- upper shelf -->
+<div style="position: absolute; left: 900px; top: 330px; width: 520px; height: 18px; background: #6A4429; border-top: 4px solid #8B5C38; box-shadow: 0 10px 22px rgba(60,40,20,0.2)"></div>
+<div style="position: absolute; left: 940px; top: 352px; width: 30px; height: 30px; background: #2B323B; clip-path: polygon(0 0, 100% 0, 0 100%)"></div>
+<div style="position: absolute; left: 1350px; top: 352px; width: 30px; height: 30px; background: #2B323B; clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%)"></div>
+
+<!-- classic camera: hobbies -->
+<div id="photography" aria-hidden="true" style="position: absolute; left: 925px; top: 200px; width: 190px; height: 130px">
+
+<div style="position: absolute; left: 66px; top: 0; width: 58px; height: 26px; background: #B9B19C; border-radius: 8px 8px 0 0"></div>
+<div style="position: absolute; left: 24px; top: 8px; width: 22px; height: 14px; background: #E4772A; border-radius: 4px 4px 0 0"></div>
+<div style="position: absolute; left: 146px; top: 8px; width: 28px; height: 14px; background: #B9B19C; border-radius: 4px 4px 0 0"></div>
+<div style="position: absolute; left: 0; top: 20px; width: 190px; height: 36px; background: #C9CFD6; border-radius: 10px 10px 0 0"></div>
+<div style="position: absolute; left: 0; top: 56px; width: 190px; height: 48px; background-color: #14191F; background-image: radial-gradient(rgba(237,230,214,0.16) 1px, transparent 1.4px); background-size: 6px 6px"></div>
+<div style="position: absolute; left: 0; top: 104px; width: 190px; height: 26px; background: #C9CFD6; border-radius: 0 0 10px 10px"></div>
+<div style="position: absolute; left: 12px; top: 30px; width: 30px; height: 18px; background: #0F2A44; border: 2px solid #8E959E; border-radius: 3px"></div>
+<div style="position: absolute; left: 134px; top: 32px; width: 44px; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 600; letter-spacing: 0.08em; color: #3A424D">35MM</div>
+<div style="position: absolute; left: 49px; top: 34px; width: 82px; height: 82px; background: #2B323B; border: 5px solid #C9CFD6; border-radius: 50%">
+<div style="position: absolute; left: 9px; top: 9px; width: 58px; height: 58px; background: #0F141A; border: 3px solid #3A424D; border-radius: 50%"></div>
+<div style="position: absolute; left: 21px; top: 21px; width: 34px; height: 34px; background: radial-gradient(circle at 35% 35%, #9DB7D5 0%, #1E4468 45%, #0A1622 100%); border-radius: 50%"></div>
+<div style="position: absolute; left: 6px; top: 6px; width: 64px; height: 64px; border: 1.5px solid #E4772A; border-radius: 50%; box-sizing: border-box"></div>
+</div>
+</div>
+
+<!-- trophies and certificates -->
+<div style="box-sizing: border-box; position: absolute; left: 1135px; top: 140px; width: 277px; height: 190px"><a class="obj" id="awards" href="trophies.html" style="position: absolute; left: 0px; top: 0px; width: 277px; height: 190px">
+
+
+<div style="position: absolute; left: 127px; top: 0; width: 150px; height: 190px">
+<div style="position: absolute; left: 4px; top: 28px; width: 28px; height: 40px; border: 7px solid #C9922B; border-right: none; border-radius: 22px 0 0 22px"></div>
+<div style="position: absolute; left: 118px; top: 28px; width: 28px; height: 40px; border: 7px solid #C9922B; border-left: none; border-radius: 0 22px 22px 0"></div>
+<div style="position: absolute; left: 28px; top: 14px; width: 94px; height: 98px; background: linear-gradient(90deg, #B27B1F 0%, #E8B94F 40%, #F3CE7A 55%, #C9922B 100%); border-radius: 0 0 47px 47px"></div>
+<div style="position: absolute; left: 22px; top: 8px; width: 106px; height: 12px; background: #F0C36A; border-radius: 6px"></div>
+<div style="position: absolute; left: 38px; top: 32px; width: 8px; height: 46px; background: rgba(255,255,255,0.35); border-radius: 4px"></div>
+<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" style="position: absolute; left: 58px; top: 44px"><path d="M17 2 L21.5 12 L32 13 L24 20.5 L26.5 31 L17 25.5 L7.5 31 L10 20.5 L2 13 L12.5 12 Z" fill="#12332A"></path></svg>
+<div style="position: absolute; left: 65px; top: 110px; width: 20px; height: 42px; background: #C9922B"></div>
+<div style="position: absolute; left: 56px; top: 126px; width: 38px; height: 10px; background: #F0C36A; border-radius: 5px"></div>
+<div style="position: absolute; left: 22px; top: 150px; width: 106px; height: 12px; background: #3A424D; border-radius: 3px 3px 0 0"></div>
+<div style="position: absolute; left: 0; top: 162px; width: 150px; height: 28px; background: #2B323B; border-radius: 3px"></div>
+<div style="position: absolute; left: 10px; top: 168px; width: 130px; height: 16px; background: #D9A441; line-height: 16px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 8.5px; font-weight: 600; letter-spacing: 0.08em; color: #14100C">DESIGN HACKATHON</div>
+</div>
+</a><a class="obj" href="trophies.html" style="position: absolute; left: 38px; top: 96px; width: 116px; height: 86px"><div style="position: absolute; left: 0; top: 0; width: 116px; height: 86px; transform: rotate(-3deg); transform-origin: bottom left; background: #1B1F24; border-radius: 3px; box-shadow: 0 4px 10px rgba(60,40,20,0.25)">
+<div style="position: absolute; left: 6px; top: 6px; right: 6px; bottom: 6px; background: #FFFDF6">
+<div style="position: absolute; left: 0; right: 0; top: 8px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 7px; letter-spacing: 0.2em; color: #5A5346">CERTIFICATE</div>
+<div style="position: absolute; left: 14px; right: 14px; top: 24px; height: 3px; background: #14100C; opacity: 0.75"></div>
+<div style="position: absolute; left: 24px; right: 24px; top: 33px; height: 2px; background: #14100C; opacity: 0.3"></div>
+<div style="position: absolute; left: 24px; right: 24px; top: 40px; height: 2px; background: #14100C; opacity: 0.3"></div>
+<svg width="38" height="14" viewBox="0 0 38 14" aria-hidden="true" style="position: absolute; left: 14px; bottom: 9px"><path d="M2 10 Q6 0 9 8 T16 6 T24 9 T36 4" fill="none" stroke="#1F4E9E" stroke-width="1.6" stroke-linecap="round"></path></svg>
+<div style="position: absolute; right: 10px; bottom: 6px; width: 20px; height: 20px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #F3CE7A, #C9922B); border: 2px solid #A87420"></div>
+</div>
+</div></a></div>
+
+<!-- main shelf -->
+<div style="position: absolute; left: 40px; top: 740px; width: 1360px; height: 26px; background: #6A4429; border-top: 4px solid #8B5C38; box-shadow: 0 14px 28px rgba(60,40,20,0.22)"></div>
+<div style="position: absolute; left: 140px; top: 770px; width: 44px; height: 44px; background: #2B323B; clip-path: polygon(0 0, 100% 0, 0 100%)"></div>
+<div style="position: absolute; left: 1256px; top: 770px; width: 44px; height: 44px; background: #2B323B; clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%)"></div>
+
+</div>
+<div class="mob" style="font-family:'Inter',sans-serif;color:#000000;padding:24px;box-sizing:border-box;min-height:100vh">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px">
+<a href="index.html" aria-label="Zakariae El Harrak, home" style="font-family:'Knewave',cursive;font-size:24px;line-height:0.95;color:#000000">ZAKA<br>RIAE</a>
+<input type="checkbox" id="mt" class="mt" aria-label="Toggle menu">
+<label for="mt" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+<nav aria-label="Main" class="mainnav" style="display:flex;flex-wrap:wrap;gap:4px 24px;font-size:24px;line-height:34px">
+<a href="index.html" aria-current="page" style="font-weight:700;text-decoration:underline;color:#A6470E">Home</a>
+<a href="about.html">About</a>
+<a href="experience.html">Experience</a>
+<a href="projects.html">Projects</a>
+<a href="trophies.html">Trophies &amp; Certifications</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;margin:48px 0 32px">
+<h1 style="margin:0;font-family:'Knewave',cursive;font-weight:400;font-size:clamp(28px,8vw,40px);line-height:1.3;color:#000000">Everything here tells a piece of my story</h1>
+<p style="margin:0;font-family:'La Belle Aurore',cursive;font-size:clamp(26px,7vw,32px);line-height:1.4;color:#A6470E">tap any card to explore my world</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px">
+<a class="card" href="about.html" style="background:#E4772A;color:#000000;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em">01</span><span style="font-family:'Archivo',sans-serif;font-size:21px;font-weight:900;line-height:1.1">About</span></a>
+<a class="card" href="projects.html" style="background:#3F4B5C;color:#EDE6D6;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em">02</span><span style="font-family:'Archivo',sans-serif;font-size:21px;font-weight:900;line-height:1.1">Selected Projects</span></a>
+<a class="card" href="experience.html" style="background:#0F2A44;color:#EDE6D6;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em">03</span><span style="font-family:'Archivo',sans-serif;font-size:21px;font-weight:900;line-height:1.1">Work Experience</span></a>
+<a class="card" href="trophies.html" style="background:#D9A441;color:#000000;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em">04</span><span style="font-family:'Archivo',sans-serif;font-size:21px;font-weight:900;line-height:1.1">Trophies &amp; Certifications</span></a>
+<a class="card" href="contact.html" style="background:#EDE6D6;color:#000000;border:2px solid #000000;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em">05</span><span style="font-family:'Archivo',sans-serif;font-size:21px;font-weight:900;line-height:1.1">Contact</span></a>
+</div>
+</div>
+</div>
+</body>
+</html>
